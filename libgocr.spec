@@ -77,8 +77,6 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT \
 	gocrdir=%{_includedir}
 
-gzip -9nf Changelog README STATUS TODO doc/developers.txt doc/api.ps
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
@@ -87,7 +85,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc Changelog README STATUS TODO doc/developers.txt doc/api.ps
 %attr(755,root,root) %{_libdir}/*.so.*.*
 
 %files devel
