@@ -18,6 +18,7 @@ Patch1:		%{name}-doc.patch
 URL:		http://jocr.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
+BuildRequires:	libtool
 BuildRequires:	libltdl-devel
 BuildRequires:	netpbm-devel
 BuildRequires:	tetex-latex
