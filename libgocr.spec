@@ -5,7 +5,7 @@ Version:	0.7.2
 Release:	2
 License:	LGPL
 Group:		Libraries
-Source0:	http://prdownloads.sourceforge.net/jocr/%{name}-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/jocr/%{name}-%{version}.tar.gz
 Patch0:		%{name}-doc.patch
 Patch1:		%{name}-configure.patch
 URL:		http://jocr.sourceforge.net/
