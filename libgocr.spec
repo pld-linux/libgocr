@@ -85,6 +85,7 @@ Statyczna wersja biblioteki GOCR API.
 %patch1 -p1
 
 %build
+rm -f missing
 libtoolize --copy --force --ltdl
 aclocal
 autoconf
@@ -94,6 +95,7 @@ automake -a -c
 
 %install
 rm -rf $RPM_BUILD_ROOT
+
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT \
 	gocrdir=%{_includedir}
