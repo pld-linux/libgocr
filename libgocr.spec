@@ -6,6 +6,7 @@ Release:	2
 License:	LGPL
 Group:		Libraries
 Source0:	http://dl.sourceforge.net/jocr/%{name}-%{version}.tar.gz
+# Source0-md5:	1b4747f02a0f2eadf31228f19c120265
 Patch0:		%{name}-doc.patch
 Patch1:		%{name}-configure.patch
 URL:		http://jocr.sourceforge.net/
