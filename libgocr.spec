@@ -64,7 +64,7 @@ Statyczna wersja biblioteki GOCR API.
 
 %build
 rm -f missing
-aclocal
+%{__aclocal}
 %{__autoconf}
 %{__automake}
 %configure
