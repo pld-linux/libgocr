@@ -1,0 +1,22 @@
+--- libgocr-0.7.1/doc/Makefile.am.orig	Sun Jul 22 16:44:17 2001
++++ libgocr-0.7.1/doc/Makefile.am	Mon Sep 10 21:49:26 2001
+@@ -8,7 +8,7 @@
+ 	-@LATEX@ -interaction=nonstopmode api.tex
+ if DVIPS
+ 	echo "Running dvips..."
+-	-@DVIPS@ api.dvi
++	-@DVIPS@ api.dvi -o api.ps
+ endif
+ if LATEX2HTML
+ 	echo "Running latex2html..."
+--- libgocr-0.7.2/Makefile.am.orig	Sun Jul 22 16:39:50 2001
++++ libgocr-0.7.2/Makefile.am	Mon Sep 10 21:49:36 2001
+@@ -3,7 +3,6 @@
+ # INCLUDES = $(INCLTDL)
+ 
+-SUBDIRS = libltdl include src 
+-#doc
++SUBDIRS = libltdl include src doc
+ 
+ EXTRA_DIST =	Changelog \
+ 		STATUS \

@@ -1,0 +1,20 @@
+--- libgocr-0.7.2/configure.in.orig	Thu Aug 23 16:19:47 2001
++++ libgocr-0.7.2/configure.in	Tue Oct  9 21:43:48 2001
+@@ -17,7 +17,7 @@
+ if test "$netpbml" != "no"; then
+ 	CFLAGS="$CFLAGS -L$netpbml"
+ else
+-	CFLAGS="$CFLAGS -L$/usr/local/netpbm/lib"
++	CFLAGS="$CFLAGS -L/usr/local/netpbm/lib"
+ fi
+ 
+ dnl Check compilers, processors, etc
+@@ -86,7 +86,7 @@
+     AC_MSG_ERROR([Cannot find PNM library])
+ fi 
+ 
+-CFLAGS="$(CFLAGS) -I\$(top_srcdir)/libltdl -I\$(top_srcdir)/include -g -Wall"
++CFLAGS="$CFLAGS -I\$(top_srcdir)/libltdl -I\$(top_srcdir)/include -g -Wall"
+ 
+ AC_SUBST(PNM_LIBS)
+ 

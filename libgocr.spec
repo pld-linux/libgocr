@@ -2,7 +2,7 @@ Summary:	GOCR API library
 Summary(pl):	Biblioteka GOCR API
 Name:		libgocr
 Version:	0.7.2
-Release:	1
+Release:	2
 License:	LGPL
 Group:		Libraries
 Group(de):	Libraries
@@ -13,11 +13,14 @@ Group(pt_BR):	Bibliotecas
 Group(ru):	Библиотеки
 Group(uk):	Б╕бл╕отеки
 Source0:	http://prdownloads.sourceforge.net/jocr/%{name}-%{version}.tar.gz
+Patch0:		%{name}-doc.patch
+Patch1:		%{name}-configure.patch
 URL:		http://jocr.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	libtool
 BuildRequires:	netpbm-devel
+BuildRequires:	tetex-latex
+BuildRequires:	tetex-dvips
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -77,10 +80,11 @@ Statyczna wersja biblioteki GOCR API.
 
 %prep
 %setup -q
+%patch0 -p1
+%patch1 -p1
 
 %build
 rm -f missing
-libtoolize --copy --force --ltdl
 aclocal
 autoconf
 automake -a -c
@@ -94,7 +98,7 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT \
 	gocrdir=%{_includedir}
 
-gzip -9nf Changelog README STATUS TODO doc/developers.txt
+gzip -9nf Changelog README STATUS TODO doc/developers.txt doc/api.ps
 
 %clean
 rm -rf $RPM_BUILD_ROOT
