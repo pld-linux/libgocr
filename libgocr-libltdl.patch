@@ -1,0 +1,23 @@
+--- libgocr-0.7.1/configure.in.orig	Thu Jul 19 16:30:55 2001
++++ libgocr-0.7.1/configure.in	Mon Sep 10 21:36:49 2001
+@@ -23,7 +23,7 @@
+ AC_CHECK_PROG(DOXYGEN,doxygen,doxygen)
+ AM_CONDITIONAL(DOXYGEN,test "$DOXYGEN")
+ 
+-AC_LIBLTDL_CONVENIENCE(./libltdl)
++AC_LIBLTDL_INSTALLABLE(./libltdl)
+ AC_SUBST(LIBLTDL)
+ 
+ AC_LIBTOOL_DLOPEN
+--- libgocr-0.7.1/src/Makefile.am.orig	Fri Jun  8 21:42:56 2001
++++ libgocr-0.7.1/src/Makefile.am	Mon Sep 10 21:45:23 2001
+@@ -19,7 +19,7 @@
+ 
+ libgocr_la_CFLAGS = -g
+ libgocr_la_LDFLAGS = -export-dynamic
+-libgocr_la_LIBADD = ../@LIBLTDL@ "-dlopen" self @PNM_LIBS@
+-libgocr_la_DEPENDENCIES = ../@LIBLTDL@
++libgocr_la_LIBADD = @LIBLTDL@ "-dlopen" self @PNM_LIBS@
++libgocr_la_DEPENDENCIES = @LIBLTDL@
+ 
+ noinst_HEADERS = _gocr.h
