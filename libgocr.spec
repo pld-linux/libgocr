@@ -5,13 +5,6 @@ Version:	0.7.2
 Release:	2
 License:	LGPL
 Group:		Libraries
-Group(de):	Libraries
-Group(es):	Bibliotecas
-Group(fr):	Librairies
-Group(pl):	Biblioteki
-Group(pt_BR):	Bibliotecas
-Group(ru):	Библиотеки
-Group(uk):	Б╕бл╕отеки
 Source0:	http://prdownloads.sourceforge.net/jocr/%{name}-%{version}.tar.gz
 Patch0:		%{name}-doc.patch
 Patch1:		%{name}-configure.patch
@@ -44,13 +37,6 @@ obraz znaku i zwraca jego warto╤Ф.
 Summary:	Development package for GOCR API
 Summary(pl):	Pakiet dla programistСw u©ywaj╠cych GOCR API
 Group:		Development/Libraries
-Group(de):	Entwicklung/Libraries
-Group(es):	Desarrollo/Bibliotecas
-Group(fr):	Development/Librairies
-Group(pl):	Programowanie/Biblioteki
-Group(pt_BR):	Desenvolvimento/Bibliotecas
-Group(ru):	Разработка/Библиотеки
-Group(uk):	Розробка/Б╕бл╕отеки
 Requires:	%{name} = %{version}
 
 %description devel
@@ -63,13 +49,6 @@ Pliki nagЁСwkowe i dokumentacja programisty do GOCR API.
 Summary:	Static GOCR API library
 Summary(pl):	Biblioteka statyczna GOCR API
 Group:		Development/Libraries
-Group(de):	Entwicklung/Libraries
-Group(es):	Desarrollo/Bibliotecas
-Group(fr):	Development/Librairies
-Group(pl):	Programowanie/Biblioteki
-Group(pt_BR):	Desenvolvimento/Bibliotecas
-Group(ru):	Разработка/Библиотеки
-Group(uk):	Розробка/Б╕бл╕отеки
 Requires:	%{name}-devel = %{version}
 
 %description static
