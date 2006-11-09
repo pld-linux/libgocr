@@ -13,8 +13,8 @@ URL:		http://jocr.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	netpbm-devel
-BuildRequires:	tetex-latex
 BuildRequires:	tetex-dvips
+BuildRequires:	tetex-latex
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -38,7 +38,7 @@ obraz znaku i zwraca jego warto¶æ.
 Summary:	Development package for GOCR API
 Summary(pl):	Pakiet dla programistów u¿ywaj±cych GOCR API
 Group:		Development/Libraries
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description devel
 Header files and developer's documentation for GOCR API.
@@ -50,7 +50,7 @@ Pliki nag³ówkowe i dokumentacja programisty do GOCR API.
 Summary:	Static GOCR API library
 Summary(pl):	Biblioteka statyczna GOCR API
 Group:		Development/Libraries
-Requires:	%{name}-devel = %{version}
+Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static version of GOCR API library.
