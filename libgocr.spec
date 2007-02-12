@@ -1,5 +1,5 @@
 Summary:	GOCR API library
-Summary(pl):	Biblioteka GOCR API
+Summary(pl.UTF-8):   Biblioteka GOCR API
 Name:		libgocr
 Version:	0.7.2
 Release:	2
@@ -26,36 +26,36 @@ do is to write a plugin (using, for example, the Module Development
 Kit), which "simply" processes the image of a character and returns
 its value. Easy.
 
-%description -l pl
-GOCR (GNU OCR) API jest bibliotek± na licencji LGPL maj±c± za zadanie
-u³atwiæ ¿ycie programistom algorytmów OCR. Biblioteka obs³uguje wiele
-wewnêtrznych problemów, struktur, danych, obrazków - uwalniaj±c
-programistê od tego ciê¿aru. Wszystko, co musi napisaæ programista, to
-plugin (u¿ywaj±c np. Module Development Kit), który "tylko" obrabia
-obraz znaku i zwraca jego warto¶æ.
+%description -l pl.UTF-8
+GOCR (GNU OCR) API jest bibliotekÄ… na licencji LGPL majÄ…cÄ… za zadanie
+uÅ‚atwiÄ‡ Å¼ycie programistom algorytmÃ³w OCR. Biblioteka obsÅ‚uguje wiele
+wewnÄ™trznych problemÃ³w, struktur, danych, obrazkÃ³w - uwalniajÄ…c
+programistÄ™ od tego ciÄ™Å¼aru. Wszystko, co musi napisaÄ‡ programista, to
+plugin (uÅ¼ywajÄ…c np. Module Development Kit), ktÃ³ry "tylko" obrabia
+obraz znaku i zwraca jego wartoÅ›Ä‡.
 
 %package devel
 Summary:	Development package for GOCR API
-Summary(pl):	Pakiet dla programistów u¿ywaj±cych GOCR API
+Summary(pl.UTF-8):   Pakiet dla programistÃ³w uÅ¼ywajÄ…cych GOCR API
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
 %description devel
 Header files and developer's documentation for GOCR API.
 
-%description devel -l pl
-Pliki nag³ówkowe i dokumentacja programisty do GOCR API.
+%description devel -l pl.UTF-8
+Pliki nagÅ‚Ã³wkowe i dokumentacja programisty do GOCR API.
 
 %package static
 Summary:	Static GOCR API library
-Summary(pl):	Biblioteka statyczna GOCR API
+Summary(pl.UTF-8):   Biblioteka statyczna GOCR API
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static version of GOCR API library.
 
-%description static -l pl
+%description static -l pl.UTF-8
 Statyczna wersja biblioteki GOCR API.
 
 %prep
