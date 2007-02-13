@@ -1,5 +1,5 @@
 Summary:	GOCR API library
-Summary(pl.UTF-8):   Biblioteka GOCR API
+Summary(pl.UTF-8):	Biblioteka GOCR API
 Name:		libgocr
 Version:	0.7.2
 Release:	2
@@ -36,7 +36,7 @@ obraz znaku i zwraca jego wartość.
 
 %package devel
 Summary:	Development package for GOCR API
-Summary(pl.UTF-8):   Pakiet dla programistów używających GOCR API
+Summary(pl.UTF-8):	Pakiet dla programistów używających GOCR API
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
@@ -48,7 +48,7 @@ Pliki nagłówkowe i dokumentacja programisty do GOCR API.
 
 %package static
 Summary:	Static GOCR API library
-Summary(pl.UTF-8):   Biblioteka statyczna GOCR API
+Summary(pl.UTF-8):	Biblioteka statyczna GOCR API
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
